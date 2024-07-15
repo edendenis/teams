@@ -1,26 +1,26 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Como instalar/configurar/usar o `Microsoft Teams` no `Linux Ubuntu`
+# # Como instalar/configurar/usar o `Microsoft Teams for Linux` no `Linux Ubuntu`
 # 
 # ## Resumo
 # 
-# Neste documento estão contidos os principais comandos e configurações para configurar/instalar/usar o `Microsoft Teams` no `Linux Ubuntu`.
+# Neste documento estão contidos os principais comandos e configurações para configurar/instalar/usar o `Microsoft Teams for Linux` no `Linux Ubuntu`.
 # 
 # ## _Abstract_
 # 
-# _This document contains the main commands and settings for configuring/installing/use the `Microsoft Teams` on `Linux Ubuntu`._
+# _This document contains the main commands and settings for configuring/installing/use the `Microsoft Teams for Linux` on `Linux Ubuntu`._
 
 # ## Descrição [2]
 # 
 # `Microsoft Teams`
 # 
-# O Microsoft Teams é uma plataforma de colaboração e comunicação empresarial desenvolvida pela Microsoft. Ele oferece uma variedade de recursos, incluindo bate-papo em equipe, videoconferência, compartilhamento de arquivos e integração com outras ferramentas e serviços da Microsoft, como o Office 365. O Microsoft Teams permite que equipes de trabalho se comuniquem e colaborem de forma eficiente, independentemente da localização geográfica, facilitando a organização de reuniões virtuais, o compartilhamento de documentos e a colaboração em projetos. Com recursos avançados de segurança e conformidade, integração com aplicativos de terceiros e suporte para uma variedade de dispositivos, o Microsoft Teams é amplamente utilizado por empresas de todos os tamanhos para melhorar a produtividade e a eficiência da equipe.
+# O `Microsoft Teams` é uma plataforma de colaboração e comunicação empresarial desenvolvida pela Microsoft. Ele oferece uma variedade de recursos, incluindo bate-papo em equipe, videoconferência, compartilhamento de arquivos e integração com outras ferramentas e serviços da Microsoft, como o `Office 365`. O `Microsoft Teams` permite que equipes de trabalho se comuniquem e colaborem de forma eficiente, independentemente da localização geográfica, facilitando a organização de reuniões virtuais, o compartilhamento de documentos e a colaboração em projetos. Com recursos avançados de segurança e conformidade, integração com aplicativos de terceiros e suporte para uma variedade de dispositivos, o `Microsoft Teams` é amplamente utilizado por empresas de todos os tamanhos para melhorar a produtividade e a eficiência da equipe.
 # 
 
-# ## 1. Configurar/Instalar o `Microsoft Teams` no Linux` Ubuntu` [1]
+# ## 1. Configurar/Instalar/usar o `Microsoft Teams for Linux` no `Linux Ubuntu` [1]
 # 
-# Para configurar/instalar o `Microsoft Teams` no `Linux Ubuntu`, você pode seguir estas etapas:
+# Para configurar/instalar/usar o `Microsoft Teams for Linux` no `Linux Ubuntu`, você pode seguir estas etapas:
 # 
 # 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 # 
@@ -44,7 +44,9 @@
 #     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
 #  
 
-# Para instalar o `Microsoft Teams` no `Linux Ubuntu`. A Microsoft oferece uma versão do Teams especificamente para Linux, que pode ser baixada e instalada diretamente. Aqui estão os passos básicos para a instalação:
+# ### 1.1 Configurar/Instalar/Usar o `Microsoft Teams for Linux` pelo `.deb`
+# 
+# Para instalar o `Microsoft Teams for Linux` no `Linux Ubuntu`. A Microsoft oferece uma versão do `Teams` especificamente para `Linux`, que pode ser baixada e instalada diretamente. Aqui estão os passos básicos para a instalação:
 # 
 # 3. **Baixe o pacote `.deb` do `Microsoft Teams`:** Você pode baixar o pacote `.deb` para o `Teams` diretamente do site oficial da Microsoft.
 # 
@@ -61,9 +63,9 @@
 # Lembre-se de que a Microsoft atualiza o Teams regularmente, então é uma boa ideia manter seu software atualizado. A instalação pelo pacote `.deb` geralmente não configura um repositório para atualizações automáticas, então você pode precisar baixar e instalar manualmente novas versões do Teams para mantê-lo atualizado.
 # 
 
-# ## 1.1 Código completo configurar/instalar
+# #### 1.1.1 Código completo configurar/instalar/usar
 # 
-# Para configurar/instalar o `Microsoft` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
+# Para configurar/instalar/usar o `Microsoft` no `Linux Ubuntu` sem precisar digitar linha por linha, você pode seguir estas etapas:
 # 
 # 1. Abra o `Terminal Emulator`. Você pode fazer isso pressionando: `Ctrl + Alt + T`
 # 
@@ -73,24 +75,29 @@
 #     NÃO há.
 #     ```
 
-# 2. Certifique-se de que seu sistema esteja limpo e atualizado.
+# ### 1.2 Configurar/Instalar/Usar o `Microsoft Teams for Linux` pelo `snap`
 # 
-#     2.1 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
-#     
-#     2.2 Remover pacotes `.deb` antigos ou duplicados do cache local. É útil para liberar espaço, pois remove apenas os pacotes que não podem mais ser baixados (ou seja, versões antigas de pacotes que foram atualizados). Digite o seguinte comando: `sudo apt autoclean`
+# Para instalar o `Microsoft Teams for Linux` no `Linux Ubuntu`. A Microsoft oferece uma versão do `Teams` especificamente para `Linux`, que pode ser baixada e instalada diretamente. Aqui estão os passos básicos para a instalação:
 # 
-#     2.3 Remover pacotes que foram automaticamente instalados para satisfazer as dependências de outros pacotes e que não são mais necessários. Digite o seguinte comando: `sudo apt autoremove -y`
+# 1. **Instalar o `Microsoft Teams`:** Você pode instalar o `Teams` diretamente do `snap`, execute o comando: `sudo snap install teams-for-linux`
+
+# ## 2. Desinstalar o `MIcrosoft Teams` instalado pelo `.deb`
 # 
-#     2.4 Buscar as atualizações disponíveis para os pacotes que estão instalados em seu sistema. Digite o seguinte comando e pressione `Enter`: `sudo apt update`
+# Para desinstalar o `Microsoft Teams` que foi instalado usando um pacote `.deb` no `Linux Ubuntu`, você pode usar o `dpkg` (Debian Package Manager). Siga os passos abaixo:
 # 
-#     2.5 **Corrigir pacotes quebrados**: Isso atualizará a lista de pacotes disponíveis e tentará corrigir pacotes quebrados ou com dependências ausentes: `sudo apt --fix-broken install`
+# 1. Abra o Terminal.
 # 
-#     2.6 Limpar o `cache` do gerenciador de pacotes `apt`. Especificamente, ele remove todos os arquivos de pacotes (`.deb`) baixados pelo `apt` e armazenados em `/var/cache/apt/archives/`. Digite o seguinte comando: `sudo apt clean` 
-#     
-#     2.7 Para ver a lista de pacotes a serem atualizados, digite o seguinte comando e pressione `Enter`:  `sudo apt list --upgradable`
+# 2. **Execute o seguinte comando para desinstalar o `Microsoft Teams`**: `sudo dpkg --remove teams`
 # 
-#     2.8 Realmente atualizar os pacotes instalados para as suas versões mais recentes, com base na última vez que você executou `sudo apt update`. Digite o seguinte comando e pressione `Enter`: `sudo apt full-upgrade -y`
-#  
+# 3. Se houver algum problema durante a desinstalação ou se quiser garantir que todos os arquivos relacionados sejam removidos, você pode usar o comando `purge`: `sudo dpkg --purge teams`
+# 
+#     Esses comandos removerão o `Microsoft Teams` do seu sistema.
+# 
+# 4. Caso precise remover algum resquício de dependências não utilizadas, você pode executar: `sudo apt autoremove`
+# 
+#     Isso garantirá que qualquer dependência que não seja mais necessária seja removida, liberando espaço em disco.
+# 
+# Após executar esses comandos, o `Microsoft Teams` deve estar completamente desinstalado do seu sistema Ubuntu.
 
 # ## Referências
 # 
