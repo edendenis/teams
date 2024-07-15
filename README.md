@@ -57,7 +57,7 @@ Para instalar o `Microsoft Teams for Linux` no `Linux Ubuntu`. A Microsoft ofere
 
 6. **Inicie o `Microsoft Teams`:** Após a instalação, você pode iniciar o `Microsoft Teams` procurando por ele no menu de aplicativos do seu Ubuntu.
 
-Lembre-se de que a Microsoft atualiza o Teams regularmente, então é uma boa ideia manter seu software atualizado. A instalação pelo pacote `.deb` geralmente não configura um repositório para atualizações automáticas, então você pode precisar baixar e instalar manualmente novas versões do Teams para mantê-lo atualizado.
+Lembre-se de que a `Microsoft` atualiza o `Teams` regularmente, então é uma boa ideia manter seu software atualizado. A instalação pelo pacote `.deb` geralmente não configura um repositório para atualizações automáticas, então você pode precisar baixar e instalar manualmente novas versões do `Teams` para mantê-lo atualizado.
 
 
 #### 1.1.1 Código completo configurar/instalar/usar
@@ -72,11 +72,20 @@ Para configurar/instalar/usar o `Microsoft` no `Linux Ubuntu` sem precisar digit
     NÃO há.
     ```
 
-### 1.2 Configurar/Instalar/Usar o `Microsoft Teams for Linux` pelo `snap`
+### 1.2 Configurar/Instalar/Usar o `Microsoft Teams for Linux` pelo `snap` [3]
 
-Para instalar o `Microsoft Teams for Linux` no `Linux Ubuntu`. A Microsoft oferece uma versão do `Teams` especificamente para `Linux`, que pode ser baixada e instalada diretamente. Aqui estão os passos básicos para a instalação:
+Aqui estão os passos básicos para a instalação:
 
 1. **Instalar o `Microsoft Teams`:** Você pode instalar o `Teams` diretamente do `snap`, execute o comando: `sudo snap install teams-for-linux`
+
+### 1.3 Configurar/Instalar/Usar o `Microsoft Teams` pelo `flatpak`
+
+Aqui estão os passos básicos para a instalação:
+
+1. Certifique-se de seguir o guia de configuração da sua distribuição `Linux` antes de instalar: `flatpak instalar flathub com.github.IsmaelMartinez.teams_for_linux`
+
+2. Executar: `flatpak execute com.github.IsmaelMartinez.teams_for_linux`
+
 
 ## 2. Desinstalar o `Microsoft Teams`
 
@@ -113,4 +122,10 @@ Este comando removerá o `Microsoft Teams` que foi instalado via `Snap` do seu s
 [1] OPENAI. ***Instale o Teams no Ubuntu.*** Disponível em: <https://chat.openai.com/c/a21756a6-1a1d-4945-a183-9bd9b7ed3ef9> (texto adaptado). Acessado em: 07/02/2024 21:01.
 
 [2] OPENAI. ***Vs code: editor popular.*** Disponível em: <https://chat.openai.com/c/b640a25d-f8e3-4922-8a3b-ed74a2657e42> (texto adaptado). Acessado em: 07/02/2024 21:01.
+
+[3] RAMOS, I. M.. ***Teams-for-linux.*** Disponível em: <https://snapcraft.io/teams-for-linux> (texto adaptado). Acessado em: 15/07/2024 15:40.
+
+
+[4] MARTINEZ, I.. **Portal for teams.*** Disponível em: <https://flathub.org/apps/com.github.IsmaelMartinez.teams_for_linux> (texto adaptado). Acessado em: 15/07/2024 15:41.
+
 
