@@ -78,11 +78,13 @@ Para instalar o `Microsoft Teams for Linux` no `Linux Ubuntu`. A Microsoft ofere
 
 1. **Instalar o `Microsoft Teams`:** Você pode instalar o `Teams` diretamente do `snap`, execute o comando: `sudo snap install teams-for-linux`
 
-## 2. Desinstalar o `MIcrosoft Teams` instalado pelo `.deb`
+## 2. Desinstalar o `Microsoft Teams`
+
+### 2.1 Instalado pelo `.deb`
 
 Para desinstalar o `Microsoft Teams` que foi instalado usando um pacote `.deb` no `Linux Ubuntu`, você pode usar o `dpkg` (Debian Package Manager). Siga os passos abaixo:
 
-1. Abra o Terminal.
+1. Abra o `Terminal Emulator`.
 
 2. **Execute o seguinte comando para desinstalar o `Microsoft Teams`**: `sudo dpkg --remove teams`
 
@@ -95,6 +97,16 @@ Para desinstalar o `Microsoft Teams` que foi instalado usando um pacote `.deb` n
     Isso garantirá que qualquer dependência que não seja mais necessária seja removida, liberando espaço em disco.
 
 Após executar esses comandos, o `Microsoft Teams` deve estar completamente desinstalado do seu sistema Ubuntu.
+
+### 2.2 Desinstar pelo `snap`
+
+Se o `Microsoft Teams` foi instalado via `Snap`, você pode desinstalá-lo usando o comando snap remove. Siga os passos abaixo:
+
+1. Abra o `Terminal Emulator`.
+
+2. Execute o seguinte comando para desinstalar o `Microsoft Teams`: `sudo snap remove teams-for-linux`
+
+Este comando removerá o `Microsoft Teams` que foi instalado via `Snap` do seu sistema.
 
 ## Referências
 
